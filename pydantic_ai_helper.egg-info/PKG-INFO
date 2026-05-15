@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: pydantic-ai-helper
+Version: 0.1.0
+Summary: Helper utilities for pydantic_ai: unified provider factory, structured output, and tool-calling across OpenAI, Anthropic, Gemini, Ollama.
+Requires-Python: >=3.10
+Requires-Dist: pydantic>=2.7
+Requires-Dist: pydantic-ai-slim[anthropic,google,openai,vertexai]>=0.0.36
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: httpx>=0.27
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.23; extra == "dev"
+Requires-Dist: ruff>=0.6; extra == "dev"
+Provides-Extra: notebook
+Requires-Dist: jupyter>=1; extra == "notebook"
+Requires-Dist: ipykernel>=6; extra == "notebook"
+Requires-Dist: nest_asyncio>=1.6; extra == "notebook"
